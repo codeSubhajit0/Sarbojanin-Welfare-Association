@@ -5,7 +5,6 @@ const photos = [
   { src: "/images/event-durgapuja.png", alt: "Community medical camp and volunteers", span: "sm:col-span-2 sm:row-span-2" },
   { src: "/images/event-digital-training.jpg.png", alt: "Students learning in a classroom" },
   { src: "/images/plantation-drive.png", alt: "Doctor caring for an elderly patient" },
-  { src: "/images/event-durgapuja.jpeg", alt: "Durga Puja festival celebrations" },
   { src: "/images/event-road-safety-demo.jpg.png", alt: "Language day seminar" },
   { src: "/images/distinguished-assembly.png", alt: "Youth leadership workshop" },
   { src: "/images/hero-banner.png", alt: "Volunteers joining hands together" },

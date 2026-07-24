@@ -278,12 +278,14 @@ export default function ContactPage() {
         className="max-w-6xl mx-auto px-6 pb-20"
       >
         <div className="rounded-2xl overflow-hidden border border-gold-light/20 h-80">
-          <iframe
-            title="Sarbojonin Welfare Association location"
-            className="w-full h-full"
-            loading="lazy"
-            src="https://www.google.com/maps?q=Kolkata,West%20Bengal,India&output=embed"
-          />
+<iframe
+  title="Sarbojonin Welfare Association location"
+  className="w-full h-full border-0"
+  loading="lazy"
+  allowFullScreen
+  referrerPolicy="strict-origin-when-cross-origin"
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.6471497793063!2d75.8166249750831!3d26.851172962733052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db612a4e04831%3A0xaec33991903c768f!2s8%2C%20Sector%201%2C%20Malviya%20Nagar%2C%20Jaipur%2C%20Rajasthan%20302017!5e0!3m2!1sen!2sin!4v1784881185085!5m2!1sen!2sin"
+/>
         </div>
       </motion.section>
     </div>
