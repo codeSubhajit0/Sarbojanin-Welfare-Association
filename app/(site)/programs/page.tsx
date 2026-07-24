@@ -38,7 +38,7 @@ const programs = [
       "Winter sweater and warm clothing distribution",
       "First aid, CPR awareness, and emergency hospital assistance",
     ],
-    image: "/images/event-clothes-health-drive.jpg",
+    image: "/images/elderly-health.jpg",
   },
   {
     id: "culture",

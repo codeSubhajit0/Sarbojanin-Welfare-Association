@@ -109,8 +109,8 @@ export default function InitiativesPage() {
             </h1>
             <p className="text-ink/60 mt-5 leading-relaxed">
               In accordance with our Trust Deed, we undertake a wide range of
-              charitable activities for the benefit of society irrespective
-              of caste, creed, religion, language or gender.
+              charitable activities for the benefit of society irrespective of
+              caste, creed, religion, language or gender.
             </p>
             <div className="flex flex-wrap gap-4 mt-7">
               <Link href="/programs" className="btn-primary">
@@ -128,45 +128,42 @@ export default function InitiativesPage() {
             className="grid grid-cols-2 gap-4"
           >
             <motion.div
-              
               transition={{ duration: 0.3 }}
               className="relative row-span-2 rounded-2xl overflow-hidden shadow-md card-hover"
             >
               <Image
-                src="/images/classroom-girl.jpg"
+                src="/images/plantation-drive.png"
                 alt="Students learning in a classroom"
                 fill
                 className="object-cover transition-transform duration-500 hover:scale-110"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-forest/95 text-white p-4">
                 <p className="font-serif font-semibold text-sm">
-                  Every Initiative Creates Impact
+                  Every Tree Creates Life
                 </p>
                 <p className="text-xs text-white/70 mt-1">
-                  Built on compassion. Driven by purpose.
+                  Rooted in purpose. Growing for a greener tomorrow.
                 </p>
               </div>
             </motion.div>
             <motion.div
-              
               transition={{ duration: 0.3 }}
               className="relative h-32 rounded-2xl overflow-hidden shadow-md card-hover"
             >
               <Image
-                src="/images/doctor-elderly.jpg"
+                src="/images/elderly-health.jpg"
                 alt="Doctor caring for an elderly patient"
                 fill
                 className="object-cover transition-transform duration-500 hover:scale-110"
               />
             </motion.div>
             <motion.div
-              
               transition={{ duration: 0.3 }}
               className="relative h-32 rounded-2xl overflow-hidden shadow-md card-hover"
             >
               <Image
-                src="/images/dance-performance.jpg"
-                alt="Cultural dance performance"
+                src="/images/event-durgapuja.png"
+                alt="Durga Puja Celebrations"
                 fill
                 className="object-cover transition-transform duration-500 hover:scale-110"
               />
@@ -189,7 +186,6 @@ export default function InitiativesPage() {
               key={it.title}
               variants={fadeUp}
               transition={{ duration: 0.5, ease: "easeOut" }}
-              
               className="bg-white rounded-2xl p-6 border border-gold-light/20 shadow-sm card-hover"
             >
               <span
