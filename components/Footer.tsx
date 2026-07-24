@@ -121,7 +121,7 @@ export default function Footer() {
               <FaMapMarkerAlt className="mt-1 text-gold shrink-0" size={13} />
               SN-1 NEAR MAHIMA,OPPOSITE ROYAL PLATINA VIT ROAD JAGATPURA, JAIPUR
               302017,<br/>
-              8/77,Malviya Nagar Jaipur,Jaipur-302017
+              8/77,MALVIYA NAGAR JAIPUR
             </li>
             <li className="flex items-center gap-2.5">
               <FaPhoneAlt className="text-gold shrink-0" size={13} />
