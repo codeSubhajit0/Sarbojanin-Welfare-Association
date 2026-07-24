@@ -1,0 +1,208 @@
+import {
+  FaUsers,
+  FaLeaf,
+  FaBookOpen,
+  FaHeartbeat,
+  FaMusic,
+  FaHandsHelping,
+  FaBalanceScaleLeft,
+  FaHandHoldingHeart,
+  FaCalendarAlt,
+  FaMapMarkerAlt,
+  FaArrowRight,
+  FaShieldAlt,
+  FaGraduationCap,
+  FaStethoscope,
+  FaUsersCog,
+  FaTheaterMasks,
+  FaHeart,
+  FaSeedling,
+  FaBullseye,
+  FaSearch,
+} from "react-icons/fa";
+
+export const stats = [
+  { icon: FaUsers, value: "6+", label: "Active Members" },
+  { icon: FaCalendarAlt, value: "7+", label: "Years of Service" },
+  { icon: FaHandHoldingHeart, value: "100+", label: "Community Events" },
+  { icon: FaLeaf, value: "100+", label: "Welfare Initiatives" },
+  { icon: FaMapMarkerAlt, value: "Across India", label: "Serving Communities" },
+];
+
+
+export const keypoints = [
+  { icon: FaUsersCog, title: "100%", label: "Charitable Purpose" },
+  { icon: FaHeart, title: "No", label: "Discrimination" },
+  { icon: FaUsers, title: "Community", label: "Driven" },
+  { icon: FaBullseye, title: "Positive", label: "Impact" },
+];
+
+export const events = [
+  {
+    image: "/images/event-durgapuja.png",
+    date: "15-20 OCT",
+    tag: "FESTIVAL",
+    tagColor: "bg-maroon/10 text-maroon",
+    title: "Durga Puja Preparations & Assembly",
+    desc: "Join us as we prepare for the grandest festival of the year. Kolkata palace-themed pandals, Anando Mela food stalls, Dhunuchi dance, and cultural events.",
+    place: "Community Main Hall / JLN Marg Garden",
+    cta: "Register as Volunteer",
+  },
+  {
+    image: "/images/event-digital-training.jpg.png",
+    date: "WINTER INITIATIVE",
+    tag: "WELFARE",
+    tagColor: "bg-blue-100 text-blue-700",
+    title: "Warm Clothes & Sweater Distribution Drive",
+    desc: "In collaboration with Arogyam Seva Sansthan and Patrika's 'Hum Saath Hain' campaign, warm clothing and sweaters were distributed to underprivileged families.",
+    place: "Gator Slum, Malviya Nagar",
+    cta: "Support the Cause",
+  },
+  {
+    image: "/images/plantation-drive.png",
+    date: "08 JUL",
+    tag: "DRIVE",
+    tagColor: "bg-maroon/10 text-maroon",
+    title: "Sadhan Vriksharopan (Plantation Drive)",
+    desc: "A joint initiative with Rajasthan Patrika to plant trees, enhance green cover, and engage the community in environmental sustainability.",
+    place: "Mahaveer Udhyan, Sec-8, Malviya Nagar",
+    cta: "Join This Event",
+  },
+  {
+    image: "/images/event-road-safety-demo.jpg.png", // or rename to /images/event-road-safety-demo.jpg
+    date: "ROAD SAFETY WEEK",
+    tag: "AWARENESS",
+    tagColor: "bg-blue-100 text-blue-700",
+    title: "Basic Life Support & CPR Demonstration",
+    desc: "Live simulated road accident demo in collaboration with Peoples Trust & Transport Dept to teach CPR, mouth-to-mouth resuscitation, and safe victim transport.",
+    place: "Patrika Gate, Jaipur",
+    cta: "Learn First Aid",
+  },
+];
+
+
+export const features = [
+  {
+    icon: FaBookOpen,
+    title: "Education & Scholarships",
+    desc: "Supporting educational institutions, scholarships, and learning opportunities.",
+    color: "text-forest bg-forest/10",
+    bar: "bg-forest",
+  },
+  {
+    icon: FaHeartbeat,
+    title: "Healthcare & Welfare",
+    desc: "Promoting medical relief, health awareness, and humanitarian assistance.",
+    color: "text-maroon bg-maroon/10",
+    bar: "bg-maroon",
+  },
+  {
+    icon: FaMusic,
+    title: "Culture & Community",
+    desc: "Organizing cultural events, festivals, and social gatherings that strengthen harmony.",
+    color: "text-gold bg-gold/10",
+    bar: "bg-gold",
+  },
+  {
+    icon: FaUsers,
+    title: "Social Development",
+    desc: "Serving women, children, marginalized communities, and rural development initiatives.",
+    color: "text-blue-700 bg-blue-100",
+    bar: "bg-blue-700",
+  },
+];
+
+
+export const clauses = [
+  {
+    icon: FaGraduationCap,
+    title: "Education",
+    text: "To promote value-based education that emphasizes ethics over commercialization, and run digital training modules taught by youth volunteers.",
+  },
+  {
+    icon: FaStethoscope,
+    title: "Healthcare",
+    text: "To organize community health awareness, wellness drives, and assist senior citizens in adopting digital health management tools.",
+  },
+  {
+    icon: FaHandHoldingHeart,
+    title: "Social Welfare",
+    text: "To support elderly residents and underprivileged families through essential aid, eldercare initiatives, and grand Bhog Prasadi distribution.",
+  },
+  {
+    icon: FaTheaterMasks,
+    title: "Culture & Heritage",
+    text: "To preserve and celebrate Bengali culture through landmark events like Durga Puja, Jagannath Rath Yatra, Poila Boishakh, Saraswati Puja, and Phag Utsav.",
+  },
+  {
+    icon: FaUsers,
+    title: "Women & Children",
+    text: "To highlight women empowerment ('Nari Shakti') through cultural dance dramas, youth mentorship, and active social leadership.",
+  },
+  {
+    icon: FaSeedling,
+    title: "Rural Development",
+    text: "To foster inter-colony bonding, environmental care, eco-friendly idol celebrations, and civic harmony across residential societies.",
+  },
+  {
+    icon: FaHandsHelping,
+    title: "Relief & Assistance",
+    text: "To extend prompt humanitarian aid, festival hospitality, and meal distributions to all sections of society without discrimination.",
+  },
+  {
+    icon: FaSearch,
+    title: "Research & Training",
+    text: "To host cultural seminars, West Bengal Foundation Day commemorations, and hands-on smartphone and cyber safety training for elders.",
+  },
+];
+
+export const pillars = [
+  {
+    icon: FaGraduationCap,
+    title: "Support Education",
+    desc: "To advocate for value-based education that emphasizes ethics over commercialization, and run youth-led digital training modules.",
+    color: "bg-forest text-white",
+  },
+  {
+    icon: FaStethoscope,
+    title: "Promote Healthcare",
+    desc: "To organize community health awareness drives, wellness outreach, and assist senior citizens in adopting digital health management tools.",
+    color: "bg-maroon text-white",
+  },
+  {
+    icon: FaHandHoldingHeart,
+    title: "Serve the Needy",
+    desc: "To support senior citizens and underprivileged families through essential care, eldercare initiatives, and grand Bhog Prasadi distribution.",
+    color: "bg-gold text-white",
+  },
+  {
+    icon: FaTheaterMasks,
+    title: "Preserve Culture",
+    desc: "To preserve and celebrate Bengali heritage through landmark events like Durga Puja, Jagannath Rath Yatra, Poila Boishakh, Saraswati Puja, and Phag Utsav.",
+    color: "bg-forest text-white",
+  },
+  {
+    icon: FaUsers,
+    title: "Empower Women & Children",
+    desc: "To highlight women empowerment ('Nari Shakti') through cultural dance dramas, youth mentorship, and active social leadership.",
+    color: "bg-maroon text-white",
+  },
+  {
+    icon: FaSeedling,
+    title: "Drive Rural Development",
+    desc: "To foster inter-colony bonding, environmental care, eco-friendly idol celebrations, and civic harmony across residential societies.",
+    color: "bg-gold text-white",
+  },
+  {
+    icon: FaHandsHelping,
+    title: "Provide Relief & Assistance",
+    desc: "To extend prompt humanitarian aid, festival hospitality, and free meal distributions to all sections of society without discrimination.",
+    color: "bg-forest text-white",
+  },
+  {
+    icon: FaSearch,
+    title: "Encourage Research & Activities",
+    desc: "To host cultural seminars, West Bengal Foundation Day commemorations, and hands-on smartphone and cyber safety training for elders.",
+    color: "bg-maroon text-white",
+  },
+];
