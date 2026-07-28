@@ -22,6 +22,7 @@ const navLinks = [
   { href: "/initiatives", label: "Initiatives" },
   { href: "/gallery", label: "Gallery" },
   { href: "/trust-deed", label: "Trust Deed" },
+  { href: "/membership", label: "Membership" },
   { href: "/contact", label: "Contact Us" },
 ];
 
@@ -49,7 +50,7 @@ export default function Navbar() {
   });
 
   return (
-    <header className="sticky top-0 z-50 bg-cream/95 backdrop-blur border-b border-gold-light/40">
+    <header className="sticky top-0 z-50 bg-cream backdrop-blur border-b border-gold-light/40">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3">
           <span className="relative flex items-center justify-center w-12 h-12 rounded-full bg-white p-0.5 shrink-0">
@@ -80,6 +81,7 @@ export default function Navbar() {
                 onMouseEnter={() => setDropdownOpen(true)}
                 onMouseLeave={() => setDropdownOpen(false)}
               >
+                
                 <button className="flex items-center gap-1 text-sm font-medium text-ink/80 hover:text-maroon transition-colors">
                   {link.label}
                   <FaChevronDown size={10} />
@@ -117,7 +119,7 @@ export default function Navbar() {
 <div className="hidden lg:block">
   <Link href="/admin" className="btn-primary text-sm">
     <FaUsers size={14} />
-    Members Area
+   Staff Login
   </Link>
 </div>
 
@@ -133,7 +135,7 @@ export default function Navbar() {
       </div>
 
       {open && (
-        <div className="lg:hidden bg-cream border-t border-gold-light/40 px-6 py-4 space-y-1">
+        <div className="h-screen overflow-hidden lg:hidden bg-cream border-t border-gold-light/40 px-6 py-4 space-y-1">
           {navLinks.map((link) => (
             <div key={link.href}>
               <Link
@@ -159,22 +161,23 @@ export default function Navbar() {
               )}
             </div>
           ))}
-          <Link
+
+          {/* <Link
             href="/contact"
             onClick={() => setOpen(false)}
             className="btn-primary text-sm w-full justify-center mt-3"
           >
             <FaUsers size={14} />
             Join Our Community
-          </Link>
+          </Link> */}
 
           <Link
             href="/admin"
             onClick={() => setOpen(false)}
-            className="btn-primary text-sm w-full justify-center mt-3"
+            className="btn-primary text-sm w-full justify-center mt-6"
           >
             <FaUsers size={14} />
-            Members Area
+            Staff Login
           </Link>
         </div>
       )}

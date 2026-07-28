@@ -8,6 +8,17 @@ const photos = [
   { src: "/images/event-road-safety-demo.jpg.png", alt: "Language day seminar" },
   { src: "/images/distinguished-assembly.png", alt: "Youth leadership workshop" },
   { src: "/images/hero-banner.png", alt: "Volunteers joining hands together" },
+
+  { src: "/images/Diya_Aarti.jpeg", alt: "108 Diya Aarti" },
+  { src: "/images/Drawing_Competition.jpeg", alt: "Drawing Competition" },
+  { src: "/images/Gathering_for_Pushpanjali.jpeg", alt: "Gathering for Pushpanjali" },
+  { src: "/images/Mahishasur_Mardani_by_members.jpeg", alt: "Mahishasur Mardani by members" },
+  { src: "/images/Mahishasur_Mardani.jpeg", alt: "Mahishasur Mardani" },
+  { src: "/images/Preparation_of_Sandhi_Puja.jpeg", alt: "Preparation of Sandhi Puja" },
+  { src: "/images/Volunteers_after_visarjan.jpeg", alt: "Volunteers after visarjan" },
+  { src: "/images/Volunteers_before_visarjan.jpeg", alt: "Volunteers after visarjan" },
+ 
+ 
 ];
 
 export default function GalleryPage() {

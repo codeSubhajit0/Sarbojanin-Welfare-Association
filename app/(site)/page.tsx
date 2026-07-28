@@ -19,9 +19,9 @@ import StatBar from "@/components/StatBar";
 
 import { motion } from "motion/react";
 
-import {stats, events, features} from "@/public/constants/constants"
+import {stats, events, features} from "@/constants/constants"
 
-import {fadeUp, fadeLeft, fadeRight, staggerContainer} from "@/public/constants/animation"
+import {fadeUp, fadeLeft, fadeRight, staggerContainer} from "@/constants/animation"
 
 
 export default function Home() {

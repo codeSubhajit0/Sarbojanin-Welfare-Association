@@ -14,9 +14,9 @@ import {
 } from "react-icons/fa";
 import { motion, AnimatePresence } from "motion/react";
 
-import {clauses} from "@/public/constants/constants"
+import {clauses} from "@/constants/constants"
 
-import {fadeUp, fadeLeft, staggerContainer} from "@/public/constants/animation"
+import {fadeUp, fadeLeft, staggerContainer} from "@/constants/animation"
 
 
 export default function TrustDeedPage() {
