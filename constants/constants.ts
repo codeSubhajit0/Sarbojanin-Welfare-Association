@@ -39,7 +39,7 @@ export const keypoints = [
 
 export const events = [
   {
-    image: "/images/event-durgapuja.png",
+    image: "/images/event-durgapuja.jpeg",
     date: "15-20 OCT",
     tag: "FESTIVAL",
     tagColor: "bg-maroon/10 text-maroon",

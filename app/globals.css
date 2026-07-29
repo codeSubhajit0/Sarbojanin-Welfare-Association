@@ -14,7 +14,7 @@ body {
 }
 
 .section-eyebrow {
-  @apply inline-flex items-center gap-3 text-maroon text-xs font-semibold tracking-[0.2em] uppercase;
+  @apply inline-flex items-center justify-center gap-3 mx-auto text-maroon text-xs font-semibold tracking-[0.2em] uppercase;
 }
 
 .section-eyebrow::before,
