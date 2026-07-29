@@ -18,6 +18,10 @@ const photos = [
   { src: "/images/Volunteers_after_visarjan.jpeg", alt: "Volunteers after visarjan" },
   { src: "/images/Volunteers_before_visarjan.jpeg", alt: "Volunteers after visarjan" },
  
+  { src: "/images/108_diye_for_pooja.jpeg", alt: "108 diye for pooja" },
+  { src: "/images/Bhog_Prasadi.jpeg", alt: "Bhog Prasadi" },
+  { src: "/images/Kanya_Poojan.jpeg", alt: "Kanya Poojan" },
+ 
  
 ];
 
