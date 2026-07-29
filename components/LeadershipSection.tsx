@@ -13,9 +13,7 @@ import {
   type Member,
 } from "@/constants/leadership";
 
-/* ------------------------------------------------------------------ */
-/* Cards                                                               */
-/* ------------------------------------------------------------------ */
+
 
 function FounderCard({ founder }: { founder: Founder }) {
   return (
@@ -130,9 +128,6 @@ function MemberCard({ member }: { member: Member }) {
   );
 }
 
-/* ------------------------------------------------------------------ */
-/* Small heading helper for each sub-section                          */
-/* ------------------------------------------------------------------ */
 
 function SubHeading({
   eyebrow,
@@ -158,9 +153,6 @@ function SubHeading({
   );
 }
 
-/* ------------------------------------------------------------------ */
-/* Main section                                                        */
-/* ------------------------------------------------------------------ */
 
 export default function LeadershipSection() {
   return (

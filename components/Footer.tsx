@@ -12,7 +12,7 @@ import {
 export default function Footer() {
   return (
     <footer className="bg-forest text-white">
-      <div className="max-w-7xl mx-auto px-6 py-16 grid gap-10 md:grid-cols-4">
+      <div className="max-w-7xl mx-auto px-6 py-16 grid gap-10 md:grid-cols-5">
         <div>
           <div className="flex items-center gap-3 mb-4">
             <span className="relative flex items-center justify-center w-11 h-11 rounded-full bg-white p-1.5 shrink-0">
@@ -111,6 +111,50 @@ export default function Footer() {
             </li>
           </ul>
         </div>
+
+        <div>
+  <h4 className="font-serif text-base font-semibold mb-4">
+    Registration Details
+  </h4>
+
+  <ul className="space-y-4 text-sm text-white/70">
+    <li>
+      <p className="text-white font-medium uppercase tracking-wider text-xs">
+        DARPAN ID
+      </p>
+      <p className="mt-1 break-all">
+        RJ/2025/0765297
+      </p>
+    </li>
+
+    <li>
+      <p className="text-white font-medium uppercase tracking-wider text-xs">
+        SAN
+      </p>
+      <p className="mt-1 break-all">
+        8005220120000186
+      </p>
+    </li>
+
+    <li>
+      <p className="text-white font-medium uppercase tracking-wider text-xs">
+        UDYAM Registration
+      </p>
+      <p className="mt-1 break-all">
+        UDYAM-RJ-17-0662559
+      </p>
+    </li>
+
+    <li className="pt-2">
+      <Link
+        href="/trust-deed"
+        className="inline-flex items-center text-gold hover:underline"
+      >
+        View Trust Deed →
+      </Link>
+    </li>
+  </ul>
+</div>
 
         <div>
           <h4 className="font-serif text-base font-semibold mb-4">
