@@ -2,13 +2,14 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { FaUsers, FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
 
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About Us" },
+  { href: "/leadership", label: "Leadership" },
   {
     href: "/programs",
     label: "Our Programs",
@@ -28,31 +29,13 @@ const navLinks = [
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-  const [mobileScreen, setMobileScreen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const pathname = usePathname();
 
-  // This handles the screen size
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth <= 640) {
-        setMobileScreen(true);
-      }
-
-      handleResize();
-
-      window.addEventListener("resize", handleResize);
-      console.log(mobileScreen);
-      return () => {
-        window.removeEventListener("resize", handleResize);
-      };
-    };
-  });
-
   return (
     <header className="sticky top-0 z-50 bg-cream backdrop-blur border-b border-gold-light/40">
-      <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-3">
+      <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between gap-4">
+        <Link href="/" className="flex items-center gap-3 shrink-0">
           <span className="relative flex items-center justify-center w-12 h-12 rounded-full bg-white p-0.5 shrink-0">
             <Image
               src="/images/logo.png"
@@ -62,7 +45,7 @@ export default function Navbar() {
               className="object-contain p-1"
             />
           </span>
-          <span className="flex flex-col leading-tight">
+          <span className="flex flex-col leading-tight whitespace-nowrap">
             <span className="font-serif text-lg font-semibold text-maroon">
               Sarbojonin
             </span>
@@ -72,17 +55,16 @@ export default function Navbar() {
           </span>
         </Link>
 
-        <nav className="hidden lg:flex items-center gap-8">
+        <nav className="hidden xl:flex items-center gap-5 2xl:gap-8 flex-nowrap">
           {navLinks.map((link) =>
             link.dropdown ?
               <div
                 key={link.href}
-                className="relative"
+                className="relative shrink-0"
                 onMouseEnter={() => setDropdownOpen(true)}
                 onMouseLeave={() => setDropdownOpen(false)}
               >
-                
-                <button className="flex items-center gap-1 text-sm font-medium text-ink/80 hover:text-maroon transition-colors">
+                <button className="flex items-center gap-1 text-sm font-medium text-ink/80 hover:text-maroon transition-colors whitespace-nowrap">
                   {link.label}
                   <FaChevronDown size={10} />
                 </button>
@@ -105,7 +87,7 @@ export default function Navbar() {
             : <Link
                 key={link.href}
                 href={link.href}
-                className={`text-sm font-medium transition-colors ${
+                className={`text-sm font-medium transition-colors whitespace-nowrap shrink-0 ${
                   pathname === link.href ?
                     "text-maroon"
                   : "text-ink/80 hover:text-maroon"
@@ -116,15 +98,15 @@ export default function Navbar() {
           )}
         </nav>
 
-<div className="hidden lg:block">
-  <Link href="/admin" className="btn-primary text-sm">
-    <FaUsers size={14} />
-   Staff Login
-  </Link>
-</div>
+        <div className="hidden xl:block shrink-0">
+          <Link href="/admin" className="btn-primary text-sm whitespace-nowrap">
+            <FaUsers size={14} />
+            Staff Login
+          </Link>
+        </div>
 
         <button
-          className="lg:hidden text-ink"
+          className="xl:hidden text-ink shrink-0"
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
         >
@@ -135,7 +117,7 @@ export default function Navbar() {
       </div>
 
       {open && (
-        <div className="h-screen overflow-hidden lg:hidden bg-cream border-t border-gold-light/40 px-6 py-4 space-y-1">
+        <div className="xl:hidden bg-cream border-t border-gold-light/40 px-6 py-4 space-y-1 max-h-[calc(100vh-5rem)] overflow-y-auto">
           {navLinks.map((link) => (
             <div key={link.href}>
               <Link
@@ -161,15 +143,6 @@ export default function Navbar() {
               )}
             </div>
           ))}
-
-          {/* <Link
-            href="/contact"
-            onClick={() => setOpen(false)}
-            className="btn-primary text-sm w-full justify-center mt-3"
-          >
-            <FaUsers size={14} />
-            Join Our Community
-          </Link> */}
 
           <Link
             href="/admin"

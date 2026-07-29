@@ -16,6 +16,7 @@ import {
   FaShieldAlt,
 } from "react-icons/fa";
 import StatBar from "@/components/StatBar";
+import LeadershipDirectory from "@/components/LeadershipSection";
 
 import { motion } from "motion/react";
 
@@ -244,6 +245,7 @@ export default function Home() {
           className="mt-12"
         >
           <StatBar stats={stats} />
+          <LeadershipDirectory/>
         </motion.div>
       </motion.section>
     </div>
