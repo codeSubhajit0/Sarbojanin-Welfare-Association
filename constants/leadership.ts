@@ -21,12 +21,13 @@ export interface Member {
 export const trusteeGroups: TrusteeGroup[] = [
   {
     id: 1,
-    image: "/images/founder.jpeg",
+    image: "/images/trusteemembers/founder.jpeg",
     members: [{ name: "Dr Ashish Mitra", position: "Founder Trustee" }],
   },
   {
     id: 2,
-    image: "/images/Founder Trustee Dr Somendu Ghosh & Smt Aparna Ghosh.jpeg",
+    image:
+      "/images/trusteemembers/Founder Trustee Dr Somendu Ghosh & Smt Aparna Ghosh.jpeg",
     members: [
       { name: "Dr Somendu Ghosh", position: "Founder Trustee" },
       { name: "Smt Aparna Ghosh", position: "Founder Trustee" },
