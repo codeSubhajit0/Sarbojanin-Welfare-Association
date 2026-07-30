@@ -16,7 +16,8 @@ import {
   FaShieldAlt,
 } from "react-icons/fa";
 import StatBar from "@/components/StatBar";
-import LeadershipDirectory from "@/components/LeadershipSection";
+
+import LeadershipSection from "@/components/LeadershipSection";
 
 import { motion } from "motion/react";
 
@@ -128,7 +129,7 @@ export default function Home() {
             variants={fadeUp}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.7 }}
             className="bg-forest rounded-2xl px-8 py-8 flex flex-col lg:flex-row items-center gap-6 lg:gap-10 text-white"
           >
@@ -167,7 +168,7 @@ export default function Home() {
         variants={staggerContainer}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: true, amount: 0.1 }}
         className="min-h-screen flex flex-col justify-center max-w-7xl mx-auto px-6 py-16"
       >
         <div className="text-center max-w-2xl mx-auto mb-12">
@@ -238,16 +239,12 @@ export default function Home() {
           ))}
                     
         </div>
-
-        <motion.div
-          variants={fadeUp}
-          transition={{ duration: 0.7, delay: 0.15, ease: "easeOut" }}
-          className="mt-12"
-        >
-          <StatBar stats={stats} />
-          <LeadershipDirectory/>
-        </motion.div>
       </motion.section>
+
+      <div className="max-w-7xl mx-auto px-6">
+        <StatBar stats={stats} />
+        <LeadershipSection />
+      </div>
     </div>
   );
 }

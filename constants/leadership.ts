@@ -17,7 +17,6 @@ export interface Member {
   image: string;
 }
 
-
 export const trusteeGroups: TrusteeGroup[] = [
   {
     id: 1,
@@ -26,6 +25,11 @@ export const trusteeGroups: TrusteeGroup[] = [
   },
   {
     id: 2,
+    image: "/images/trusteemembers/Pallab Bhanja Chaudhary Vice President.jpeg",
+    members: [{ name: "Pallab Bhanja Chaudhary", position: "Vice President" }],
+  },
+  {
+    id: 3,
     image:
       "/images/trusteemembers/Founder Trustee Dr Somendu Ghosh & Smt Aparna Ghosh.jpeg",
     members: [
@@ -34,13 +38,9 @@ export const trusteeGroups: TrusteeGroup[] = [
     ],
   },
   {
-    id: 3,
-    image:
-      "/images/trusteemembers/Shri R.K.Dutta Roy & Smt Lajumita Dutta.jpeg",
-    members: [
-      { name: "Shri R.K.Dutta Roy ", position: "Founder Trustee" },
-      { name: "Smt Lajumita Dutta", position: "Founder Trustee" },
-    ],
+    id: 4,
+    image: "/images/placeholder.png",
+    members: [{ name: "Powshali Chatterjee", position: "President" }],
   },
 ];
 
@@ -55,6 +55,12 @@ export const foundingMembers: Member[] = [
     name: "Shri Abhrajeet Dey & Smt Mahua Dey",
     position: "Founding Member",
     image: "/images/foundingMembers/Shri Abhrajeet Dey & Smt Mahua Dey.jpeg",
+  },
+  {
+    name: "Shri R.K.Dutta Roy & Smt Lajumita Dutta",
+    position: "Founding Member",
+    image:
+      "/images/trusteemembers/Shri R.K.Dutta Roy & Smt Lajumita Dutta.jpeg",
   },
   {
     name: "Shri Amaresh Chatterjee & Smt Snigdha Chatterjee",
@@ -91,12 +97,6 @@ export const foundingMembers: Member[] = [
     image: "/images/foundingMembers/Shri Boren Roy & Smt Deepali Roy.jpeg",
   },
   {
-    name: "Shri Arup Banerjee & Smt Ruma Banerjee",
-    position: "Founding Member",
-    image:
-      "/images/foundingMembers/Shri Arup Banerjee & Smt Ruma Banerjee.jpeg",
-  },
-  {
     name: "Shri Debashish Chakraborty & Smt Boisakhi Chakraborty",
     position: "Founding Member",
     image:
@@ -129,5 +129,10 @@ export const foundingMembers: Member[] = [
     position: "Founding Member",
     image:
       "/images/foundingMembers/Smt Protima Ghosh & Late Shri N.K.Ghosh.jpeg",
+  },
+  {
+    name: "Protima Roychowdhury ",
+    position: "Secretary",
+    image: "/images/placeholder.png",
   },
 ];
