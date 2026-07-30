@@ -6,7 +6,6 @@ import { motion } from "motion/react";
 import { FaArrowRight } from "react-icons/fa";
 import AutoCarousel from "./ui/AutoCarousel";
 import {
-  // founders,
   trusteeGroups,
   foundingMembers,
   type Founder,
@@ -14,24 +13,19 @@ import {
   type Member,
 } from "@/constants/leadership";
 
-/* ------------------------------------------------------------------ */
-/* Cards                                                               */
-/* ------------------------------------------------------------------ */
-
 function FounderCard({ founder }: { founder: Founder }) {
   return (
     <motion.div
-      
       transition={{ duration: 0.25 }}
       className="bg-white rounded-3xl border border-gold-light/20 overflow-hidden"
     >
       <div className="grid lg:grid-cols-2">
-        <div className="relative aspect-[4/5] sm:aspect-[5/6]">
+        <div className="relative aspect-[4/5] sm:aspect-[5/6] bg-[#faf7f2]">
           <Image
             src={founder.image}
             alt={founder.name}
             fill
-            className="object-cover"
+            className="object-contain rounded-2xl p-6 sm:p-8"
             sizes="(max-width: 1024px) 100vw, 50vw"
           />
         </div>
@@ -57,19 +51,20 @@ function FounderCard({ founder }: { founder: Founder }) {
 function TrusteeCard({ group }: { group: TrusteeGroup }) {
   return (
     <motion.div
-      
       transition={{ duration: 0.25 }}
-      className="bg-white rounded-3xl   overflow-hidden lg:h-[640px]"
+      className="bg-white rounded-3xl border border-gold-light/20 overflow-hidden lg:h-[640px]"
     >
       <div className="grid lg:grid-cols-2 h-full">
-        <div className="relative h-72 sm:h-96 lg:h-full">
-          <Image
-            src={group.image}
-            alt={group.members.map((m) => m.name).join(" & ")}
-            fill
-            className="object-cover"
-            sizes="(max-width: 1024px) 100vw, 50vw"
-          />
+        <div className="relative h-72 sm:h-96 lg:h-full bg-[#faf7f2]">
+          <div className="absolute inset-0 p-6 sm:p-8 lg:p-10 rounded-2xl overflow-hidden">
+            <Image
+              src={group.image}
+              alt={group.members.map((m) => m.name).join(" & ")}
+              fill
+              className="object-contain rounded-2xl"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            />
+          </div>
         </div>
 
         <div className="p-6 sm:p-10 lg:p-12 flex flex-col justify-center">
@@ -84,11 +79,12 @@ function TrusteeCard({ group }: { group: TrusteeGroup }) {
                 <h4 className="font-serif text-xl sm:text-2xl lg:text-3xl font-semibold text-ink">
                   {member.name}
                 </h4>
-                <p className="text-maroon font-medium mt-1 text-sm sm:text-base">{member.position}</p>
+                <p className="text-maroon font-medium mt-1 text-sm sm:text-base">
+                  {member.position}
+                </p>
               </div>
             ))}
           </div>
-
         </div>
       </div>
     </motion.div>
@@ -98,32 +94,37 @@ function TrusteeCard({ group }: { group: TrusteeGroup }) {
 function MemberCard({ member }: { member: Member }) {
   return (
     <motion.div
-      
       transition={{ duration: 0.25 }}
-      className="bg-white rounded-3xl  overflow-hidden"
+      className="bg-white rounded-3xl border border-gold-light/20 overflow-hidden"
     >
       <div className="grid sm:grid-cols-2 sm:h-72 lg:h-80">
-        <div className="relative h-56 sm:h-full overflow-hidden">
+        {/* Image */}
+        <div className="relative h-56 sm:h-full bg-[#faf7f2] p-6 overflow-hidden">
           <Image
             src={member.image}
             alt={member.name}
             fill
-            className="object-cover transition duration-500 hover:scale-110"
+            className="object-contain rounded-2xl"
             sizes="(max-width: 1024px) 100vw, 50vw"
           />
         </div>
 
-        <div className="p-6 sm:p-8 lg:p-10 flex flex-col justify-center">
-          <span className="text-maroon uppercase tracking-widest text-xs font-semibold">
+        {/* Content */}
+        <div className="min-w-0 min-h-0 p-6 sm:p-8 lg:p-10 flex flex-col justify-center overflow-hidden">
+          <span className="text-maroon uppercase tracking-widest text-xs font-semibold shrink-0">
             Founding Member
           </span>
-          <div className="w-16 h-1 bg-gold rounded-full mt-4 mb-6" />
 
-          <div className="border-l-4 border-maroon pl-5">
-            <h4 className="font-serif text-2xl sm:text-3xl font-semibold text-ink">
+          <div className="w-16 h-1 bg-gold rounded-full mt-4 mb-6 shrink-0" />
+
+          <div className="border-l-4 border-maroon pl-5 min-w-0 min-h-0">
+            <h4 className="font-serif text-xl sm:text-2xl lg:text-2xl font-semibold text-ink leading-tight break-words">
               {member.name}
             </h4>
-            <p className="text-maroon font-medium mt-1">{member.position}</p>
+
+            <p className="text-maroon font-medium mt-2 break-words">
+              {member.position}
+            </p>
           </div>
         </div>
       </div>
@@ -131,9 +132,7 @@ function MemberCard({ member }: { member: Member }) {
   );
 }
 
-/* ------------------------------------------------------------------ */
-/* Small heading helper for each sub-section                          */
-/* ------------------------------------------------------------------ */
+
 
 function SubHeading({
   eyebrow,
@@ -152,15 +151,16 @@ function SubHeading({
       className="text-center max-w-2xl mx-auto"
     >
       <span className="section-eyebrow">{eyebrow}</span>
-      <h3 className="font-serif text-2xl sm:text-3xl font-bold mt-4 text-ink">{title}</h3>
-      <p className="text-ink/60 mt-3 text-sm sm:text-base leading-relaxed">{desc}</p>
+      <h3 className="font-serif text-2xl sm:text-3xl font-bold mt-4 text-ink">
+        {title}
+      </h3>
+      <p className="text-ink/60 mt-3 text-sm sm:text-base leading-relaxed">
+        {desc}
+      </p>
     </motion.div>
   );
 }
 
-/* ------------------------------------------------------------------ */
-/* Main section                                                        */
-/* ------------------------------------------------------------------ */
 
 export default function LeadershipSection() {
   return (
@@ -178,12 +178,11 @@ export default function LeadershipSection() {
             Guiding Our Mission With Vision & Dedication
           </h2>
           <p className="text-ink/70 mt-5">
-            Meet the dedicated individuals whose commitment, leadership and compassion
-            continue to shape the future of Sarbojonin Welfare Association.
+            Meet the dedicated individuals whose commitment, leadership and
+            compassion continue to shape the future of Sarbojonin Welfare
+            Association.
           </p>
         </motion.div>
-
-
 
         {/* Founder Trustees */}
         <div className="mt-20 sm:mt-24">

@@ -4,7 +4,6 @@ import Link from "next/link";
 import {
   FaBookOpen,
   FaHeartbeat,
-  FaMusic,
   FaUsers,
   FaArrowRight,
   FaCheckCircle,
@@ -42,7 +41,7 @@ const programs = [
   },
   {
     id: "culture",
-    icon: FaMusic,
+    icon: FaUsers,
     title: "Culture & Community",
     color: "bg-gold",
     text: "text-gold",
@@ -52,7 +51,7 @@ const programs = [
       "West Bengal Foundation Day & cultural seminars",
       "Performing arts, dance dramas (e.g., Mahishasur Mardini), and music nights",
     ],
-    image: "/images/event-durgapuja.png",
+    image: "/images/event-durgapuja.jpeg",
   },
   {
     id: "social",
@@ -120,9 +119,9 @@ export default function ProgramsPage() {
           Our Programs
         </h1>
         <p className="text-ink/60 mt-4 max-w-2xl mx-auto">
-          Four pillars guide everything we do — education, healthcare,
-          culture and social development — each built to create meaningful,
-          lasting change.
+          Four pillars guide everything we do — education, healthcare, culture
+          and social development — each built to create meaningful, lasting
+          change.
         </p>
       </motion.section>
 
@@ -218,8 +217,8 @@ export default function ProgramsPage() {
             Want to support one of our programs?
           </h2>
           <p className="text-white/80 mt-3 max-w-xl mx-auto">
-            Every contribution of time, skill or resources helps us reach
-            more people across communities.
+            Every contribution of time, skill or resources helps us reach more
+            people across communities.
           </p>
           <Link href="/contact" className="btn-outline-light mt-6">
             <FaUsers size={14} /> Get Involved Today
