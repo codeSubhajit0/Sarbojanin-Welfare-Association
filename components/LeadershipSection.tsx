@@ -6,6 +6,7 @@ import { motion } from "motion/react";
 import { FaArrowRight } from "react-icons/fa";
 import AutoCarousel from "./ui/AutoCarousel";
 import {
+  // founders,
   trusteeGroups,
   foundingMembers,
   type Founder,
@@ -13,14 +14,16 @@ import {
   type Member,
 } from "@/constants/leadership";
 
-
+/* ------------------------------------------------------------------ */
+/* Cards                                                               */
+/* ------------------------------------------------------------------ */
 
 function FounderCard({ founder }: { founder: Founder }) {
   return (
     <motion.div
-      whileHover={{ y: -6 }}
+      
       transition={{ duration: 0.25 }}
-      className="bg-white rounded-3xl shadow-lg border border-gold-light/20 overflow-hidden"
+      className="bg-white rounded-3xl border border-gold-light/20 overflow-hidden"
     >
       <div className="grid lg:grid-cols-2">
         <div className="relative aspect-[4/5] sm:aspect-[5/6]">
@@ -56,7 +59,7 @@ function TrusteeCard({ group }: { group: TrusteeGroup }) {
     <motion.div
       
       transition={{ duration: 0.25 }}
-      className="bg-white rounded-3xl border border-gold-light/20 overflow-hidden lg:h-[640px]"
+      className="bg-white rounded-3xl   overflow-hidden lg:h-[640px]"
     >
       <div className="grid lg:grid-cols-2 h-full">
         <div className="relative h-72 sm:h-96 lg:h-full">
@@ -97,7 +100,7 @@ function MemberCard({ member }: { member: Member }) {
     <motion.div
       
       transition={{ duration: 0.25 }}
-      className="bg-white rounded-3xl border border-gold-light/20 overflow-hidden"
+      className="bg-white rounded-3xl  overflow-hidden"
     >
       <div className="grid sm:grid-cols-2 sm:h-72 lg:h-80">
         <div className="relative h-56 sm:h-full overflow-hidden">
@@ -128,6 +131,9 @@ function MemberCard({ member }: { member: Member }) {
   );
 }
 
+/* ------------------------------------------------------------------ */
+/* Small heading helper for each sub-section                          */
+/* ------------------------------------------------------------------ */
 
 function SubHeading({
   eyebrow,
@@ -141,8 +147,7 @@ function SubHeading({
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.3 }}
+      animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       className="text-center max-w-2xl mx-auto"
     >
@@ -153,6 +158,9 @@ function SubHeading({
   );
 }
 
+/* ------------------------------------------------------------------ */
+/* Main section                                                        */
+/* ------------------------------------------------------------------ */
 
 export default function LeadershipSection() {
   return (
@@ -161,8 +169,7 @@ export default function LeadershipSection() {
         {/* Overall heading */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
           className="text-center max-w-3xl mx-auto"
         >
@@ -175,6 +182,8 @@ export default function LeadershipSection() {
             continue to shape the future of Sarbojonin Welfare Association.
           </p>
         </motion.div>
+
+
 
         {/* Founder Trustees */}
         <div className="mt-20 sm:mt-24">
