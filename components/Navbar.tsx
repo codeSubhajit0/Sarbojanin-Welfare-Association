@@ -34,7 +34,7 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 bg-cream backdrop-blur border-b border-gold-light/40">
-      <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between gap-4">
+      <div className="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between gap-6">
         <Link href="/" className="flex items-center gap-3 shrink-0">
           <span className="relative flex items-center justify-center w-12 h-12 rounded-full bg-white p-0.5 shrink-0">
             <Image
@@ -49,7 +49,7 @@ export default function Navbar() {
             <span className="font-serif text-lg font-semibold text-maroon">
               Sarbojonin
             </span>
-            <span className="text-[10px] tracking-[0.25em] text-forest font-semibold">
+            <span className="text-[8px] tracking-[0.25em] text-forest font-semibold">
               WELFARE ASSOCIATION
             </span>
           </span>

@@ -21,15 +21,13 @@ export const trusteeGroups: TrusteeGroup[] = [
   {
     id: 1,
     image: "/images/trusteemembers/founder.jpeg",
-    members: [{ name: "Dr Ashish Mitra", position: "Founder Trustee" }],
+    members: [
+      { name: "Dr Ashish Mitra", position: "Founder Trustee" },
+      { name: "Neeta Mitra", position: "Founder Trustee" },
+    ],
   },
   {
     id: 2,
-    image: "/images/trusteemembers/Pallab Bhanja Chaudhary Vice President.jpeg",
-    members: [{ name: "Pallab Bhanja Chaudhary", position: "Vice President" }],
-  },
-  {
-    id: 3,
     image:
       "/images/trusteemembers/Founder Trustee Dr Somendu Ghosh & Smt Aparna Ghosh.jpeg",
     members: [
@@ -38,9 +36,19 @@ export const trusteeGroups: TrusteeGroup[] = [
     ],
   },
   {
-    id: 4,
+    id: 3,
     image: "/images/placeholder.png",
     members: [{ name: "Powshali Chatterjee", position: "President" }],
+  },
+  {
+    id: 4,
+    image: "/images/trusteemembers/Pallab Bhanja Chaudhary Vice President.jpeg",
+    members: [{ name: "Pallab Bhanja Chaudhary", position: "Vice President" }],
+  },
+  {
+    id: 5,
+    image: "/images/placeholder.png",
+    members: [{ name: "Protima Roychowdhury", position: "Secretary" }],
   },
 ];
 
@@ -129,10 +137,5 @@ export const foundingMembers: Member[] = [
     position: "Founding Member",
     image:
       "/images/foundingMembers/Smt Protima Ghosh & Late Shri N.K.Ghosh.jpeg",
-  },
-  {
-    name: "Protima Roychowdhury ",
-    position: "Secretary",
-    image: "/images/placeholder.png",
   },
 ];
