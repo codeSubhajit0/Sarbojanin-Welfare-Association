@@ -5,12 +5,9 @@ import {
   FaHeartbeat,
   FaMusic,
   FaHandsHelping,
-  FaBalanceScaleLeft,
   FaHandHoldingHeart,
   FaCalendarAlt,
   FaMapMarkerAlt,
-  FaArrowRight,
-  FaShieldAlt,
   FaGraduationCap,
   FaStethoscope,
   FaUsersCog,
@@ -19,6 +16,13 @@ import {
   FaSeedling,
   FaBullseye,
   FaSearch,
+  FaPhoneAlt,
+  FaEnvelope,
+  FaClock,
+  FaFacebookF,
+  FaInstagram,
+  FaYoutube,
+  FaWhatsapp,
 } from "react-icons/fa";
 
 export const stats = [
@@ -28,7 +32,6 @@ export const stats = [
   { icon: FaLeaf, value: "100+", label: "Welfare Initiatives" },
   { icon: FaMapMarkerAlt, value: "Across India", label: "Serving Communities" },
 ];
-
 
 export const keypoints = [
   { icon: FaUsersCog, title: "100%", label: "Charitable Purpose" },
@@ -80,7 +83,6 @@ export const events = [
   },
 ];
 
-
 export const features = [
   {
     icon: FaBookOpen,
@@ -111,7 +113,6 @@ export const features = [
     bar: "bg-blue-700",
   },
 ];
-
 
 export const clauses = [
   {
@@ -206,3 +207,155 @@ export const pillars = [
     color: "bg-maroon text-white",
   },
 ];
+
+export const initiatives = [
+  {
+    icon: FaGraduationCap,
+    title: "Value-Based Education & Digital Literacy",
+    color: "text-forest bg-forest/10",
+    desc: "To advocate for value-based education that builds integrity over commercialism, and run youth-led digital literacy initiatives empowering senior citizens with smartphone operations and cyber safety.",
+  },
+  {
+    icon: FaHeartbeat,
+    title: "Healthcare & Digital Health Awareness",
+    color: "text-maroon bg-maroon/10",
+    desc: "To organize medical check-up drives and assist community members—especially elderly residents—in adopting digital health management applications and wellness tools.",
+  },
+  {
+    icon: FaHandsHelping,
+    title: "Social Welfare & Community Support",
+    color: "text-gold bg-gold/10",
+    desc: "To support senior citizens, families, and underprivileged sections through essential aid, Bhog Prasadi distribution during festivals, and fostering inter-community harmony.",
+  },
+  {
+    icon: FaTheaterMasks,
+    title: "Cultural Heritage, Arts & Festivals",
+    color: "text-blue-700 bg-blue-100",
+    desc: "To promote and preserve Bengali heritage, literature, and art by organizing traditional festivals like Durga Puja, Jagannath Rath Yatra, Poila Boishakh, Saraswati Puja, and Phag Utsav.",
+  },
+  {
+    icon: FaSeedling,
+    title: "Women Empowerment & Youth Mobilization",
+    color: "text-forest bg-forest/10",
+    desc: "To highlight female empowerment ('Nari Shakti') through drama, cultural leadership, and active involvement of youth as community mentors and digital trainers.",
+  },
+  {
+    icon: FaSearch,
+    title: "Seminars, Commemorations & Civic Dialogue",
+    color: "text-maroon bg-maroon/10",
+    desc: "To host cultural seminars, state foundation day celebrations, and public discussion forums that celebrate national history and foster social unity.",
+  },
+];
+
+
+// Constans for membership page
+export const GOOGLE_FORM_URL = "https://forms.gle/8ehKASGQkFv5FpTBA";
+
+export const benefits = [
+  "Be a part of a vibrant Bengali community that stays connected throughout the year.",
+  "Build meaningful friendships and strengthen community bonds.",
+  "Connect with fellow members for professional networking and business opportunities.",
+  "Benefit from trusted matrimonial references within the community.",
+  "Receive the Annual Members' Directory, helping members stay connected and support one another.",
+  "Contribute to preserving our Bengali culture and passing our traditions on to the next generation.",
+];
+
+export const signatories = [
+  { name: "Powshali Chatterjee", role: "President" },
+  { name: "Protima Roy Chowdhury", role: "Secretary" },
+  { name: "Somendu Ghosh", role: "Trustee" },
+];
+
+
+// Constants for gallery component
+
+export const photos = [
+  {
+    src: "/images/event-durgapuja.jpeg",
+    alt: "Community medical camp and volunteers",
+    span: "sm:col-span-2 sm:row-span-2",
+  },
+  {
+    src: "/images/event-digital-training.jpg.png",
+    alt: "Students learning in a classroom",
+  },
+  {
+    src: "/images/plantation-drive.png",
+    alt: "Doctor caring for an elderly patient",
+  },
+  {
+    src: "/images/event-road-safety-demo.jpg.png",
+    alt: "Language day seminar",
+  },
+  {
+    src: "/images/distinguished-assembly.png",
+    alt: "Youth leadership workshop",
+  },
+  { src: "/images/hero-banner.png", alt: "Volunteers joining hands together" },
+
+  { src: "/images/Diya_Aarti.jpeg", alt: "108 Diya Aarti" },
+  {
+    src: "/images/Drawing_Competition.jpeg",
+    alt: "Drawing Competition",
+    span: "sm:col-span-2 sm:row-span-2",
+  },
+  {
+    src: "/images/Gathering_for_Pushpanjali.jpeg",
+    alt: "Gathering for Pushpanjali",
+  },
+  { src: "/images/Mahishasur_Mardani.jpeg", alt: "Mahishasur Mardani" },
+  {
+    src: "/images/Preparation_of_Sandhi_Puja.jpeg",
+    alt: "Preparation of Sandhi Puja",
+  },
+  {
+    src: "/images/Mahishasur_Mardani_by_members.jpeg",
+    alt: "Mahishasur Mardani by members",
+    span: "sm:col-span-2 sm:row-span-2",
+  },
+  {
+    src: "/images/Volunteers_after_visarjan.jpeg",
+    alt: "Volunteers after visarjan",
+  },
+  {
+    src: "/images/Volunteers_before_visarjan.jpeg",
+    alt: "Volunteers after visarjan",
+  },
+
+  { src: "/images/108_diye_for_pooja.jpeg", alt: "108 diye for pooja" },
+  { src: "/images/Bhog_Prasadi.jpeg", alt: "Bhog Prasadi" },
+  { src: "/images/Kanya_Poojan.jpeg", alt: "Kanya Poojan" },
+];
+
+// Constanst for contact component
+
+export const contactDetails = [
+  {
+    icon: FaMapMarkerAlt,
+    title: "Visit Us",
+    lines: ["SN-1 NEAR MAHIMA,OPPOSITE ROYAL PLATINA VIT ROAD JAGATPURA, JAIPUR 302017"],
+  },
+  {
+    icon: FaPhoneAlt,
+    title: "Call Us",
+    lines: ["+91 9414321177"],
+  },
+  {
+    icon: FaEnvelope,
+    title: "Email Us",
+    lines: ["sarbojanin4all@gmail.com"],
+  },
+  {
+    icon: FaClock,
+    title: "Office Hours",
+    lines: ["Mon – Sat: 10:00 AM – 6:00 PM", "Sunday: Closed"],
+  },
+];
+
+export const socials = [
+  { icon: FaFacebookF, href: "#", label: "Facebook" },
+  { icon: FaInstagram, href: "#", label: "Instagram" },
+  { icon: FaYoutube, href: "#", label: "YouTube" },
+  { icon: FaWhatsapp, href: "#", label: "WhatsApp" },
+];
+

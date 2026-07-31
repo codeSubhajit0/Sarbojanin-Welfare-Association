@@ -15,35 +15,8 @@ import {
 } from "react-icons/fa";
 import { motion, AnimatePresence } from "motion/react";
 
-const contactDetails = [
-  {
-    icon: FaMapMarkerAlt,
-    title: "Visit Us",
-    lines: ["SN-1 NEAR MAHIMA,OPPOSITE ROYAL PLATINA VIT ROAD JAGATPURA, JAIPUR 302017"],
-  },
-  {
-    icon: FaPhoneAlt,
-    title: "Call Us",
-    lines: ["+91 9414321177"],
-  },
-  {
-    icon: FaEnvelope,
-    title: "Email Us",
-    lines: ["sarbojanin4all@gmail.com"],
-  },
-  {
-    icon: FaClock,
-    title: "Office Hours",
-    lines: ["Mon – Sat: 10:00 AM – 6:00 PM", "Sunday: Closed"],
-  },
-];
+import { contactDetails,socials } from "@/constants/constants";
 
-const socials = [
-  { icon: FaFacebookF, href: "#", label: "Facebook" },
-  { icon: FaInstagram, href: "#", label: "Instagram" },
-  { icon: FaYoutube, href: "#", label: "YouTube" },
-  { icon: FaWhatsapp, href: "#", label: "WhatsApp" },
-];
 
 const fadeUp = {
   hidden: { opacity: 0, y: 60 },
@@ -72,7 +45,6 @@ export default function ContactPage() {
 
   return (
     <div>
-      {/* Intro + details + form — full viewport so the map section can't overlap it */}
       <motion.div
         variants={staggerContainer}
         initial="hidden"

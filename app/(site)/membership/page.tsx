@@ -10,22 +10,8 @@ import {
 } from "react-icons/fa";
 import { motion } from "motion/react";
 
-const GOOGLE_FORM_URL = "https://forms.gle/8ehKASGQkFv5FpTBA";
+import {GOOGLE_FORM_URL,benefits,signatories} from "@/constants/constants"
 
-const benefits = [
-  "Be a part of a vibrant Bengali community that stays connected throughout the year.",
-  "Build meaningful friendships and strengthen community bonds.",
-  "Connect with fellow members for professional networking and business opportunities.",
-  "Benefit from trusted matrimonial references within the community.",
-  "Receive the Annual Members' Directory, helping members stay connected and support one another.",
-  "Contribute to preserving our Bengali culture and passing our traditions on to the next generation.",
-];
-
-const signatories = [
-  { name: "Powshali Chatterjee", role: "President" },
-  { name: "Protima Roy Chowdhury", role: "Secretary" },
-  { name: "Somendu Ghosh", role: "Trustee" },
-];
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
