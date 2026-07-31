@@ -18,63 +18,9 @@ import {
 } from "react-icons/fa";
 import { motion, AnimatePresence } from "motion/react";
 
-const keypoints = [
-  { icon: FaUsersCog, title: "100%", label: "Charitable Purpose" },
-  { icon: FaHeart, title: "No", label: "Discrimination" },
-  { icon: FaUsers, title: "Community", label: "Driven" },
-  { icon: FaBullseye, title: "Positive", label: "Impact" },
-];
+import { pillars, keypoints } from "@/constants/constants";
 
-const pillars = [
-  {
-    icon: FaGraduationCap,
-    title: "Support Education",
-    desc: "To advocate for value-based education that emphasizes ethics over commercialization, and run youth-led digital training modules.",
-    color: "bg-forest text-white",
-  },
-  {
-    icon: FaStethoscope,
-    title: "Promote Healthcare",
-    desc: "To organize community health awareness drives, wellness outreach, and assist senior citizens in adopting digital health management tools.",
-    color: "bg-maroon text-white",
-  },
-  {
-    icon: FaHandHoldingHeart,
-    title: "Serve the Needy",
-    desc: "To support senior citizens and underprivileged families through essential care, eldercare initiatives, and grand Bhog Prasadi distribution.",
-    color: "bg-gold text-white",
-  },
-  {
-    icon: FaTheaterMasks,
-    title: "Preserve Culture",
-    desc: "To preserve and celebrate Bengali heritage through landmark events like Durga Puja, Jagannath Rath Yatra, Poila Boishakh, Saraswati Puja, and Phag Utsav.",
-    color: "bg-forest text-white",
-  },
-  {
-    icon: FaUsers,
-    title: "Empower Women & Children",
-    desc: "To highlight women empowerment ('Nari Shakti') through cultural dance dramas, youth mentorship, and active social leadership.",
-    color: "bg-maroon text-white",
-  },
-  {
-    icon: FaSeedling,
-    title: "Drive Rural Development",
-    desc: "To foster inter-colony bonding, environmental care, eco-friendly idol celebrations, and civic harmony across residential societies.",
-    color: "bg-gold text-white",
-  },
-  {
-    icon: FaHandsHelping,
-    title: "Provide Relief & Assistance",
-    desc: "To extend prompt humanitarian aid, festival hospitality, and free meal distributions to all sections of society without discrimination.",
-    color: "bg-forest text-white",
-  },
-  {
-    icon: FaSearch,
-    title: "Encourage Research & Activities",
-    desc: "To host cultural seminars, West Bengal Foundation Day commemorations, and hands-on smartphone and cyber safety training for elders.",
-    color: "bg-maroon text-white",
-  },
-];
+
 
 const fadeUp = {
   hidden: { opacity: 0, y: 60 },

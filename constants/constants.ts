@@ -33,12 +33,7 @@ export const stats = [
   { icon: FaMapMarkerAlt, value: "Across India", label: "Serving Communities" },
 ];
 
-export const keypoints = [
-  { icon: FaUsersCog, title: "100%", label: "Charitable Purpose" },
-  { icon: FaHeart, title: "No", label: "Discrimination" },
-  { icon: FaUsers, title: "Community", label: "Driven" },
-  { icon: FaBullseye, title: "Positive", label: "Impact" },
-];
+
 
 export const events = [
   {
@@ -157,6 +152,56 @@ export const clauses = [
   },
 ];
 
+
+
+export const initiatives = [
+  {
+    icon: FaGraduationCap,
+    title: "Value-Based Education & Digital Literacy",
+    color: "text-forest bg-forest/10",
+    desc: "To advocate for value-based education that builds integrity over commercialism, and run youth-led digital literacy initiatives empowering senior citizens with smartphone operations and cyber safety.",
+  },
+  {
+    icon: FaHeartbeat,
+    title: "Healthcare & Digital Health Awareness",
+    color: "text-maroon bg-maroon/10",
+    desc: "To organize medical check-up drives and assist community members—especially elderly residents—in adopting digital health management applications and wellness tools.",
+  },
+  {
+    icon: FaHandsHelping,
+    title: "Social Welfare & Community Support",
+    color: "text-gold bg-gold/10",
+    desc: "To support senior citizens, families, and underprivileged sections through essential aid, Bhog Prasadi distribution during festivals, and fostering inter-community harmony.",
+  },
+  {
+    icon: FaTheaterMasks,
+    title: "Cultural Heritage, Arts & Festivals",
+    color: "text-blue-700 bg-blue-100",
+    desc: "To promote and preserve Bengali heritage, literature, and art by organizing traditional festivals like Durga Puja, Jagannath Rath Yatra, Poila Boishakh, Saraswati Puja, and Phag Utsav.",
+  },
+  {
+    icon: FaSeedling,
+    title: "Women Empowerment & Youth Mobilization",
+    color: "text-forest bg-forest/10",
+    desc: "To highlight female empowerment ('Nari Shakti') through drama, cultural leadership, and active involvement of youth as community mentors and digital trainers.",
+  },
+  {
+    icon: FaSearch,
+    title: "Seminars, Commemorations & Civic Dialogue",
+    color: "text-maroon bg-maroon/10",
+    desc: "To host cultural seminars, state foundation day celebrations, and public discussion forums that celebrate national history and foster social unity.",
+  },
+];
+
+// Constants for about page
+
+export const keypoints = [
+  { icon: FaUsersCog, title: "100%", label: "Charitable Purpose" },
+  { icon: FaHeart, title: "No", label: "Discrimination" },
+  { icon: FaUsers, title: "Community", label: "Driven" },
+  { icon: FaBullseye, title: "Positive", label: "Impact" },
+];
+
 export const pillars = [
   {
     icon: FaGraduationCap,
@@ -205,45 +250,6 @@ export const pillars = [
     title: "Encourage Research & Activities",
     desc: "To host cultural seminars, West Bengal Foundation Day commemorations, and hands-on smartphone and cyber safety training for elders.",
     color: "bg-maroon text-white",
-  },
-];
-
-export const initiatives = [
-  {
-    icon: FaGraduationCap,
-    title: "Value-Based Education & Digital Literacy",
-    color: "text-forest bg-forest/10",
-    desc: "To advocate for value-based education that builds integrity over commercialism, and run youth-led digital literacy initiatives empowering senior citizens with smartphone operations and cyber safety.",
-  },
-  {
-    icon: FaHeartbeat,
-    title: "Healthcare & Digital Health Awareness",
-    color: "text-maroon bg-maroon/10",
-    desc: "To organize medical check-up drives and assist community members—especially elderly residents—in adopting digital health management applications and wellness tools.",
-  },
-  {
-    icon: FaHandsHelping,
-    title: "Social Welfare & Community Support",
-    color: "text-gold bg-gold/10",
-    desc: "To support senior citizens, families, and underprivileged sections through essential aid, Bhog Prasadi distribution during festivals, and fostering inter-community harmony.",
-  },
-  {
-    icon: FaTheaterMasks,
-    title: "Cultural Heritage, Arts & Festivals",
-    color: "text-blue-700 bg-blue-100",
-    desc: "To promote and preserve Bengali heritage, literature, and art by organizing traditional festivals like Durga Puja, Jagannath Rath Yatra, Poila Boishakh, Saraswati Puja, and Phag Utsav.",
-  },
-  {
-    icon: FaSeedling,
-    title: "Women Empowerment & Youth Mobilization",
-    color: "text-forest bg-forest/10",
-    desc: "To highlight female empowerment ('Nari Shakti') through drama, cultural leadership, and active involvement of youth as community mentors and digital trainers.",
-  },
-  {
-    icon: FaSearch,
-    title: "Seminars, Commemorations & Civic Dialogue",
-    color: "text-maroon bg-maroon/10",
-    desc: "To host cultural seminars, state foundation day celebrations, and public discussion forums that celebrate national history and foster social unity.",
   },
 ];
 
