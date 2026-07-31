@@ -12,9 +12,7 @@ import {
   type Member,
 } from "@/constants/leadership";
 
-/* ------------------------------------------------------------------ */
-/* Section label                                                       */
-/* ------------------------------------------------------------------ */
+
 
 function SectionLabel({
   eyebrow,
@@ -40,9 +38,7 @@ function SectionLabel({
   );
 }
 
-/* ------------------------------------------------------------------ */
-/* Cards                                                               */
-/* ------------------------------------------------------------------ */
+
 
 function FounderFeature({ founder }: { founder: Founder }) {
   return (
@@ -134,35 +130,12 @@ function MemberGridCard({ member }: { member: Member }) {
   );
 }
 
-/* ------------------------------------------------------------------ */
-/* Full directory — everyone visible at once, grouped by category      */
-/* ------------------------------------------------------------------ */
+
 
 export default function LeadershipDirectory() {
   return (
     <section className="pb-16 sm:pb-24 bg-[#faf7f2]">
       <div className="max-w-7xl mx-auto px-6">
-        {/* Founder */}
-        {/* <div>
-          <SectionLabel
-            eyebrow="Our Founder"
-            title="Meet Our Founder"
-            desc="The vision behind Sarbojonin Welfare Association."
-          />
-          <motion.div
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.2 }}
-            className={`mt-8 sm:mt-10 grid gap-8 ${
-              founders.length > 1 ? "lg:grid-cols-2" : "max-w-4xl mx-auto"
-            }`}
-          >
-            {founders.map((f) => (
-              <FounderFeature key={f.name} founder={f} />
-            ))}
-          </motion.div>
-        </div> */}
 
         {/* Founder Trustees */}
         <div className="mt-20 sm:mt-24">

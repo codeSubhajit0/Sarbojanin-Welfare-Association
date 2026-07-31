@@ -54,6 +54,12 @@ export const trusteeGroups: TrusteeGroup[] = [
 
 export const foundingMembers: Member[] = [
   {
+    name: "Shri Arun Dey and Shrimati Deepti Dey",
+    position: "Founding Member",
+    image:
+      "/images/foundingMembers/Shri Arun Dey and Shrimati Deepti Dey Founder member.jpeg",
+  },
+  {
     name: "Shri Alok Bhattacharya & Smt Nibedita Bhattacharya",
     position: "Founding Member",
     image:

@@ -1,70 +1,11 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import {
-  FaGraduationCap,
-  FaHeartbeat,
-  FaHandsHelping,
-  FaTheaterMasks,
-  FaSeedling,
-  FaSearch,
-  FaArrowRight,
-  FaPlay,
-  FaUsers,
-  FaCalendarAlt,
-  FaStar,
-  FaHandHoldingHeart,
-  FaMapMarkerAlt,
-} from "react-icons/fa";
+import { FaArrowRight, FaPlay, FaUsers } from "react-icons/fa";
 import { motion } from "motion/react";
 import StatBar from "@/components/StatBar";
 
-const initiatives = [
-  {
-    icon: FaGraduationCap,
-    title: "Value-Based Education & Digital Literacy",
-    color: "text-forest bg-forest/10",
-    desc: "To advocate for value-based education that builds integrity over commercialism, and run youth-led digital literacy initiatives empowering senior citizens with smartphone operations and cyber safety.",
-  },
-  {
-    icon: FaHeartbeat,
-    title: "Healthcare & Digital Health Awareness",
-    color: "text-maroon bg-maroon/10",
-    desc: "To organize medical check-up drives and assist community members—especially elderly residents—in adopting digital health management applications and wellness tools.",
-  },
-  {
-    icon: FaHandsHelping,
-    title: "Social Welfare & Community Support",
-    color: "text-gold bg-gold/10",
-    desc: "To support senior citizens, families, and underprivileged sections through essential aid, Bhog Prasadi distribution during festivals, and fostering inter-community harmony.",
-  },
-  {
-    icon: FaTheaterMasks,
-    title: "Cultural Heritage, Arts & Festivals",
-    color: "text-blue-700 bg-blue-100",
-    desc: "To promote and preserve Bengali heritage, literature, and art by organizing traditional festivals like Durga Puja, Jagannath Rath Yatra, Poila Boishakh, Saraswati Puja, and Phag Utsav.",
-  },
-  {
-    icon: FaSeedling,
-    title: "Women Empowerment & Youth Mobilization",
-    color: "text-forest bg-forest/10",
-    desc: "To highlight female empowerment ('Nari Shakti') through drama, cultural leadership, and active involvement of youth as community mentors and digital trainers.",
-  },
-  {
-    icon: FaSearch,
-    title: "Seminars, Commemorations & Civic Dialogue",
-    color: "text-maroon bg-maroon/10",
-    desc: "To host cultural seminars, state foundation day celebrations, and public discussion forums that celebrate national history and foster social unity.",
-  },
-];
-
-const stats = [
-  { icon: FaUsers, value: "6+", label: "Active Members" },
-  { icon: FaCalendarAlt, value: "7+", label: "Years of Service" },
-  { icon: FaHandHoldingHeart, value: "100+", label: "Community Events" },
-  { icon: FaHandHoldingHeart, value: "100+", label: "Welfare Initiatives" },
-  { icon: FaMapMarkerAlt, value: "Across India", label: "Serving Communities" },
-];
+import { initiatives, stats } from "@/constants/constants";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 60 },
@@ -162,7 +103,7 @@ export default function InitiativesPage() {
               className="relative h-32 rounded-2xl overflow-hidden shadow-md card-hover"
             >
               <Image
-                src="/images/event-durgapuja.png"
+                src="/images/event-durgapuja.jpeg"
                 alt="Durga Puja Celebrations"
                 fill
                 className="object-cover transition-transform duration-500 hover:scale-110"
@@ -172,7 +113,6 @@ export default function InitiativesPage() {
         </div>
       </motion.section>
 
-      {/* Initiatives grid + stats — also full viewport */}
       <motion.section
         variants={staggerContainer}
         initial="hidden"
